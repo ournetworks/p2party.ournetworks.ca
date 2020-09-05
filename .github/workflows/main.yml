@@ -1,0 +1,30 @@
+name: Deploy Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: Build site
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+          bundle exec jekyll build
+      - name: Deploy site
+        uses: Burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --delete
+          path: _site/
+          remote_path: /var/www/p2party
+          remote_host: ournetworks.ca
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
