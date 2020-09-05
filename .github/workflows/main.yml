@@ -1,4 +1,4 @@
-name: Deploy Site
+name: Buiild and Deploy
 
 on:
   push:
