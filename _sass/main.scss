@@ -1,9 +1,34 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$accent-color: #00FF00;
+$mono-font-family: SourceCode,Consolas,Liberation Mono,Menlo,Courier,monospace;
+$on-palm: 736px;
+$content-width: 675px;
 
-body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+.mono {
+  font-family: $mono-font-family;
+  font-variation-settings: "wght" 401.49;
+}
+
+.color-accent {
+  color: $accent-color;
+}
+
+.bg-accent {
+  background-color: $accent-color;
+}
+
+.hover-bg-accent:hover {
+  background-color: $accent-color;
+}
+
+.highlight {
+  background-color: rgba($accent-color,.1);
+}
+
+.sticky {
+  position: sticky;
+}
+
+#chat-area {
+  min-width: 320px;
+  min-height: 50vh;
 }

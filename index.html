@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<header class="bg-accent ph3 pv2 flex justify-between items-center">
+  <h1 class="ma0 f6 mono normal">{{ site.title }}</h1>
+  <button id="chat-hide" class="round bg-transparent b--black bw0 pa1 ph3 bw1 f6 mono br-pill">Hide chat ⇥</button>
+</header>
+
+</header>
+<div class="flex">
+  <div id="live-stream-area" class="w-75 bg-black">
+    <div class="aspect-ratio--16x9 relative">
+      <div class="absolute w-100 h-100 player"></div>
+    </div>
+  </div>
+  <div id="chat-area" class="w-25">
+    <iframe class="video-chat w-100 h-100 bw0" src="https://rocketchat.ournetworks.ca/channel/general"></iframe>
+  </div>
+</div>
+
+<div class="bb sticky top-0 bg-white z-2">
+  <div class="mono pa3 align-right">
+      <h1 class="mono f4 normal ma0" id="clock-element">00:00:00</h1>
+      <h2 class="f7 normal ma0">UTC-4 | America/Toronto</h2>
+  </div>
+</div>
+
+<div class="pa3 w-75">
+  <h2 class="f2 mb2 mt1">Schedule</h2>
+  <ul class="list flex ma0 pa0 f7 mono">
+    <li class="w-20 pr1">
+      <button class="schedule-button pv2 ph3 tl br4 bw0 w-100 hover-bg-accent bg-accent pointer" data-target="2020-09-08">Tuesday,<br> September 8</button>
+    </li>
+    <li class="w-20 pr1">
+      <button class="schedule-button pv2 ph3 tl br4 bw0 w-100 hover-bg-accent pointer" data-target="2020-09-09">Wednesday,<br>  September 9</button>
+    </li>
+    <li class="w-20 pr1">
+      <button class="schedule-button pv2 ph3 tl br4 bw0 w-100 hover-bg-accent pointer" data-target="2020-09-10">Thursday,<br>  September 10</button>
+    </li>
+    <li class="w-20 pr1">
+      <button class="schedule-button pv2 ph3 tl br4 bw0 w-100 hover-bg-accent pointer" data-target="2020-09-11">Friday,<br>  September 11</button>
+    </li>
+    <li class="w-20">
+      <button class="schedule-button pv2 ph3 tl br4 bw0 w-100 hover-bg-accent pointer" data-target="2020-09-12">Saturday,<br>  September 12</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w-75 pa3">
+  <div class="schedule-day db" id="2020-09-08">
+    <h3 class="f1 mb0 mt1">Tuesday, September 8</h3>
+    {% include schedule/tuesday.html %}
+  </div>
+  <div class="schedule-day dn" id="2020-09-09">
+    <h3 class="f1 mb0 mt1">Wednesday, September 9</h3>
+    {% include schedule/wednesday.html %}
+  </div>
+  <div class="schedule-day dn" id="2020-09-10">
+    <h3 class="f1 mb0 mt1">Thursday, September 10</h3>
+    {% include schedule/thursday.html %}
+  </div>
+  <div class="schedule-day dn" id="2020-09-11">
+    <h3 class="f1 mb0 mt1">Friday, September 11</h3>
+    {% include schedule/friday.html %}
+  </div>
+  <div class="schedule-day dn" id="2020-09-12">
+    <h3 class="f1 mb0 mt1">Saturday, September 12</h3>
+    {% include schedule/saturday.html %}
+  </div>
+</div>

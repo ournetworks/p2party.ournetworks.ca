@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Our Networks" # the name of your site, e.g. ACME Corp.
+title: "Our Networks 📡 P2Party" # the name of your site, e.g. ACME Corp.
 permalink: pretty
 sass:
   style: compressed

@@ -3,10 +3,14 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
-    {{ content}}
+  <body class="sans-serif m0">
+    {{ content }}
+    {% include footer.html %}
+    <script src="{{ '/assets/js/vendor/clappr.min.js' | relative_url }}?{{ site.time | date: '%s%N' }}"></script>
+    <script src="{{ '/assets/js/vendor/level-selector.min.js' | relative_url }}?{{ site.time | date: '%s%N' }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}?{{ site.time | date: '%s%N' }}"></script>
   </body>
 </html>
