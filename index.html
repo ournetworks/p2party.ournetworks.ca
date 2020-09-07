@@ -19,7 +19,7 @@ layout: default
   </div>
 </div>
 
-<div class="bb sticky top-0 bg-white z-2">
+<div class="bb sticky top-0 bg-white z-2" id="schedule">
   <div class="mono pa3 align-right">
       <h1 class="mono f4 normal ma0" id="clock-element">00:00:00</h1>
       <h2 class="f7 normal ma0">UTC-4 | America/Toronto</h2>
@@ -47,25 +47,32 @@ layout: default
   </ul>
 </div>
 
-<div class="w-75 pa3">
-  <div class="schedule-day db" id="2020-09-08">
-    <h3 class="f1 mb0 mt1">Tuesday, September 8</h3>
-    {% include schedule/tuesday.html %}
+<div class="flex pr3">
+  <div class="w-75 pa3">
+    <div class="schedule-day db" id="2020-09-08">
+      <h3 class="f1 mb0 mt1">Tuesday, September 8</h3>
+      {% include schedule/tuesday.html %}
+    </div>
+    <div class="schedule-day dn" id="2020-09-09">
+      <h3 class="f1 mb0 mt1">Wednesday, September 9</h3>
+      {% include schedule/wednesday.html %}
+    </div>
+    <div class="schedule-day dn" id="2020-09-10">
+      <h3 class="f1 mb0 mt1">Thursday, September 10</h3>
+      {% include schedule/thursday.html %}
+    </div>
+    <div class="schedule-day dn" id="2020-09-11">
+      <h3 class="f1 mb0 mt1">Friday, September 11</h3>
+      {% include schedule/friday.html %}
+    </div>
+    <div class="schedule-day dn" id="2020-09-12">
+      <h3 class="f1 mb0 mt1">Saturday, September 12</h3>
+      {% include schedule/saturday.html %}
+    </div>
   </div>
-  <div class="schedule-day dn" id="2020-09-09">
-    <h3 class="f1 mb0 mt1">Wednesday, September 9</h3>
-    {% include schedule/wednesday.html %}
-  </div>
-  <div class="schedule-day dn" id="2020-09-10">
-    <h3 class="f1 mb0 mt1">Thursday, September 10</h3>
-    {% include schedule/thursday.html %}
-  </div>
-  <div class="schedule-day dn" id="2020-09-11">
-    <h3 class="f1 mb0 mt1">Friday, September 11</h3>
-    {% include schedule/friday.html %}
-  </div>
-  <div class="schedule-day dn" id="2020-09-12">
-    <h3 class="f1 mb0 mt1">Saturday, September 12</h3>
-    {% include schedule/saturday.html %}
+
+  <div class="w-25 vh-75 overflow-x-scroll sticky top-3 pt3">
+    <h3 class="f1 mb0 mt1 mb4">Session info</h3>
+    {% include sessions-list.html %}
   </div>
 </div>

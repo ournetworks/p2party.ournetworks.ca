@@ -8,9 +8,15 @@
     {%- for session in sortedSessions -%}
       {%- if session.sessionType contains "exhibit" and session.sessionID != 20005 -%}
       <li class="mt1 w-50 pr1">
-        <h5 class="ma0 f6"><a class="black" id="{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}-schedule" href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}">{{ session.title }}</a></h5>
+        <h5 class="ma0">
+          {% if session.sessionLink %}
+            <a href="{{ session.sessionLink }}" class="black" target="_blank" title="Visit work at {{ session.sessionLink }}">{{ session.title }}</a>
+          {% else %}
+            <a id="{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}-schedule" class="black" href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}">{{ session.title }}</a>
+          {% endif %}
+        </h5>
         {% assign presenterCount = session.presenterID.size %}
-        <h6 class="normal session-presenterID mono f6 mt2 mb2">
+        <h6 class="normal session-presenterID mono f7 mt2 mb2">
         {%- for presenterID in session.presenterID -%}
           {%- for presenter in presenters -%}
             {%- if presenter.presenterID == presenterID -%}

@@ -4,9 +4,13 @@
     <a class="schedule-block-anchor" {% unless session.skipProgramID %}id="{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}-schedule"{% endunless %}></a>
     <header>
       <h5 class="mt0 mb2 f5 session-title">
-        {%- unless session.sessionType == "orga" or session.sessionType == "hangout" -%}<a href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}" class="session-title-link black">{%- endunless -%}
-          {{ session.title }}
-        {%- unless session.sessionType == "orga" or session.sessionType == "hangout"-%}</a>{%- endunless -%}
+        {% if session.sessionLink %}
+          <a href="{{ session.sessionLink }}" class="black" target="_blank" title="Visit {{ session.sessionLink }}">{{ session.title }}</a>
+        {% else %}
+          {%- unless session.sessionType == "orga" or session.sessionType == "hangout" -%}<a href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}" class="session-title-link black">{%- endunless -%}
+            {{ session.title }}
+          {%- unless session.sessionType == "orga" or session.sessionType == "hangout"-%}</a>{%- endunless -%}
+        {% endif %}
       </h5>
       {%- unless session.sessionType contains "orga" -%}
         <ul class="list pa0 mt0 mb1 flex flex-wrap f6">

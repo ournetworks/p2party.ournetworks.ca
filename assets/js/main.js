@@ -61,7 +61,6 @@ document.querySelectorAll('.schedule-button').forEach((e) => {
       e.classList.remove('bg-accent')
     })
     e.classList.add('bg-accent')
-    console.log(e.dataset.target)
   })
 })
 
@@ -76,7 +75,6 @@ const DateToFormattedString = (d) => {
 
 const scheduleDateInit = DateToFormattedString(currentDate)
 
-// document.querySelectorAll(`[data-target='${DateToFormattedString(currentDate)}']`).forEach((e) => {
 document.querySelectorAll(`[data-target='${scheduleDateInit}']`).forEach((e) => {
   document.querySelectorAll('.schedule-button').forEach((e) => {
     e.classList.remove('bg-accent')

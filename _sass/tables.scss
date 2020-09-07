@@ -143,6 +143,7 @@ thead th.width-unset {
 
 .program-block-content {
   border-radius: 20px;
+  display: none;
 
   &:hover {
     background: rgba($accent-color,.1);
@@ -157,15 +158,6 @@ thead th.width-unset {
   position: relative;
   top: -120px;
   visibility: hidden;
-
-  & + .program-block-content {
-    border-radius: 20px;
-    background: $accent-color;
-
-    .session-jump {
-      display: block;
-    }
-  }
 }
 
 .schedule-block-anchor:target {
@@ -178,6 +170,7 @@ thead th.width-unset {
 .session-detail {
   .program-block-anchor:target {
     & + .program-block-content {
+      display: block;
       background: rgba($accent-color,.1);
       .highlight {
         background: rgba($accent-color,.2);
