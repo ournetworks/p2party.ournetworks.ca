@@ -52,6 +52,7 @@ setInterval(() => {
 
 document.querySelectorAll('.schedule-button').forEach((e) => {
   e.addEventListener('click', () => {
+    window.history.replaceState({}, '', '/')
     document.querySelectorAll('.schedule-day').forEach((e) => {
       e.classList.remove('db')
       e.classList.add('dn')
