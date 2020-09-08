@@ -1,7 +1,16 @@
 $accent-color: #00FF00;
+$accent-color-mod: #FFFF00;
 $mono-font-family: SourceCode,Consolas,Liberation Mono,Menlo,Courier,monospace;
 $on-palm: 736px;
 $content-width: 675px;
+
+a {
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .mono {
   font-family: $mono-font-family;
@@ -22,6 +31,10 @@ $content-width: 675px;
 
 .highlight {
   background-color: rgba($accent-color,.1);
+}
+
+.highlight-mod {
+  background: rgba($accent-color-mod,.2);
 }
 
 .sticky {

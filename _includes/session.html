@@ -13,10 +13,13 @@
         {% endif %}
       </h5>
       {%- unless session.sessionType contains "orga" -%}
-        <ul class="list pa0 mt0 mb1 flex flex-wrap f6">
+        <ul class="list pa0 mt0 mb1 flex flex-wrap mono f7">
         {% for item in session.sessionType %}
-          <li class="highlight pa1 mr1 mono">{{ item | capitalize | replace: '-', ' ' }}</li>
+          <li class="highlight pa1 mr1">{{ item | capitalize | replace: '-', ' ' }}</li>
         {% endfor %}
+            {% if session.moderation %}
+            <li class="highlight-mod pa1 mr1"><a class="black" href="https://ournetworks.ca/code-of-conduct/">{{ session.moderation }}</a></li>
+        {% endif %}
         </ul>
       {%- endunless -%}
       {% if session.presenterID %}
