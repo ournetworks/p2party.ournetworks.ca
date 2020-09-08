@@ -1049,7 +1049,7 @@
     1422 1829 1702 ([https://youtu.be/dT6BbhtePhI](https://youtu.be/dT6BbhtePhI)) is a performative video that explores the memories associated with physical locations from my past, present and future. More specifically, I am utilizing feet (both figuratively and literally) as a unit of measurement to navigate through my grandmother's, my mother's, and then my own home. Every carpet, rug, wood panel, tile and floor covering is meticulously measured, as I pace each inch with my feet. As I walked these homes, the floor plans become permanently ingrained in my memory, inch by inch, solidifying the connection between my family and I, no matter the distance. Each home segment can be seen as a parallel world to where I currently am; and reminds me that my past and present will always be a part of me heading into the future.
   sessionType:
     - performance
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1062,7 +1062,7 @@
     This talk begins from the premise that today’s social computing environments--their interfaces, data structures, and overall designs--have been enormously, if latently, influenced by philosophy. Machine learning strategies for computer vision and automatic classification owe a conceptual debt to Humean empiricism, for example. Embodied interaction design is deeply indebted to the insights of Heideggerean phenomenology. And the ideas of American pragmatist and logician Charles Sanders Peirce serve as an important formalizing basis for networked data structures.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1089,7 +1089,7 @@
     A software defined radio (SDR) is a type of low cost open source USB dongle that can transmit and receive information over the EM spectrum, but they have not been assigned to a structured set of communication frequencies and protocols like bluetooth, wifi, or smartphones -- these parameters are programmable in software! In a combined presentation and live demonstration, participants will explore the history and development of SDR, will look at security and privacy implications of these liminal devices in legislation, Dunne and Raby's "Hertzian Tales" (2004) and ways these devices have been used to constitute interesting device networks and solve problems in the EM -- e.g. car key fobs, beacons, IoT devices, and weather satellites overhead. The talk will finish by walking participants through building a simple FM tuner using GNU public radio and SDR, accompanied by instructions, videos and support materials.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1116,7 +1116,7 @@
     Filmed in a computer Lab, Internet Aerobics is a 20-minute aerobics workout routine about the internet, streaming to you through the internet. Aerobics props of long, blue ethernet cables are used, and hyperlink blue is celebrated as the color of online opportunity -- of links that have not yet been clicked. Aerobics moves embody multiple facets of online life, with packets of information speeding through wifi networks, routers, data centers, fiber optic cables -- often times at different speeds due to the lack of net neutrality laws. This workout routine is an invitation to you to sweat along in front of your own browser tab while thinking about and moving through the very makeup of the Internet, itself.
   sessionType:
     - performance
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1156,7 +1156,7 @@
     People miss Google Reader, but they also wouldn't use it if Mountain View brought it back. They think they would, but they wouldn't. Something else is needed. Shuhaku is Levantine Arabic for "What did they say?" It's a news and blog aggregator meant to help people find the fresh information that they will find the most interesting and useful. It's about text. It's about the galaxy brain. It's not about fame, and it's not about vitriol. Shuhaku is a news aggregator that's designed to be just social enough.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1170,7 +1170,7 @@
     The archistic, classical utopia is a completely planned desired state for the future in social and architectural terms. It is the elimination of uncertainty. However all utopias are uncertain because it is a proposed future and the future is uncertain. All utopias, archistic or not equals the intended elimination of uncertainty because their aim is to end history and hence uncertainty.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1183,7 +1183,7 @@
     In this talk, I will introduce TrustNet, a flexible and distributed system for deriving, and interacting with, computational trust. The focus of the talk will be applying TrustNet as a tool within distributed chat systems for implementing a trust-based and subjective moderation system.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1245,7 +1245,7 @@
   sessionType:
     - performance
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1318,7 +1318,7 @@
   sessionType:
     - performance
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"  
+  sessionWorkshopLink: "#"  
   moderation:
     - Moderated
 
@@ -1371,7 +1371,7 @@
     Craft practices rely on the exchange and transmission of techniques, technical skills, tacit and explicit knowledge about materials and methods but also on the circulation of common values and ethos, fostering shared mindsets and communities. Many of these communities around the world are developing and passing on these technical and cultural legacies to fellow practitioners, creating cultural and intellectual commons in the same movement, by organizing autonomous conferences, camps, short residency programs, and working collaboratively bringing local and international networks together. This session proposes to bring several of these practitioners together to discuss what their practices create beyond artifacts, and how they contribute to establishing self-determined communities and to fostering commons.
   sessionType:
     - round-table
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1385,7 +1385,7 @@
     Listening Space is an artistic research that explores transmission ecologies as a means of perceiving the surrounding environment beyond our human abilities. Conceptually the project seeks to define transmissions ecologies as raw material for artistic expression, to understand and re-imagine in poetic means, representations of audio and images broadcasted from space. The artists are creating cyber physical systems for sensing the invisible universe that surrounds us. By using open-source tools, DIY electronics, hardware hacking and digital crafts, they aim to approach art and science and create artifacts that explore the idea of citizen science. Specifically, by focusing on electromagnetic-field (EMF) and radio frequency (RF) detection, they aim to re-claim the depth of transmission ecologies, evolving at a higher rhythm than liveness, through our environment and bodies.
   sessionType:
     - performance
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1399,7 +1399,7 @@
   sessionType:
     - workshop
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1414,7 +1414,7 @@
   sessionType:
     - discussion
     - talk
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1442,7 +1442,7 @@
     _Bridge to the Internet_ is a router image that hosts network bandwidth saving services and robust local area communication applications that activate local area networks to strengthen connection within a local community. With the internet under heavy strain due to the COVID-19 pandemic, it becomes clear that we must maximize our network resources and look for alternatives to internet-based communication.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.meet.coop/hen-uue-ooh-wfi"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
@@ -1554,14 +1554,14 @@
 - sessionID: 20040
   title: "Opening remarks"
   sessionType: "orga"
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
 - sessionID: 20041
   title: "Closing remarks"
   sessionType: "orga"
-  sessionWorkshopLink: "https://ournetworks.ca/livestream/"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
