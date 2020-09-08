@@ -16,7 +16,7 @@
           {% endif %}
         </h5>
         {% assign presenterCount = session.presenterID.size %}
-        <h6 class="normal session-presenterID mono f7 mt2 mb2">
+        <h6 class="normal session-presenterID mono f7 mt2 mb1">
         {%- for presenterID in session.presenterID -%}
           {%- for presenter in presenters -%}
             {%- if presenter.presenterID == presenterID -%}
@@ -27,6 +27,9 @@
           {{ name }}{%- if presenterCount > 0 -%}, {%- endif -%}
         {%- endfor -%}
         </h6>
+        {% if session.sessionLink %}
+          <p class="mt0"><a class="f7 normal mono" id="{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}-schedule" href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}">Read more</a></p>
+        {% endif %}
       </li>
       {%- endif -%}
     {%- endfor -%}

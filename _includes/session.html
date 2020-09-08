@@ -42,6 +42,12 @@
     {%- if include.sessionCaption -%}
       <p class="mono normal f6">{{include.sessionCaption}}</p>
     {% endif %}
+
+    {% if session.sessionLink %}
+      {%- unless session.sessionType == "orga" or session.sessionType == "hangout" -%}<a href="#{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}" class="mono f6 session-title-link">{%- endunless -%}
+        Read more
+      {%- unless session.sessionType == "orga" or session.sessionType == "hangout"-%}</a>{%- endunless -%}
+    {% endif %}
   </div>
   {%- endif -%}
 {%- endfor -%}
