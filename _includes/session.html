@@ -13,7 +13,7 @@
         {% endif %}
       </h5>
       {%- unless session.sessionType contains "orga" -%}
-        <ul class="list pa0 mt0 mb1 flex flex-wrap mono f7">
+        <ul class="list pa0 mt0 mb1 flex flex-wrap mono f7 normal">
         {% for item in session.sessionType %}
           <li class="highlight pa1 mr1">{{ item | capitalize | replace: '-', ' ' }}</li>
         {% endfor %}
@@ -40,7 +40,7 @@
       {% endif %}
     </header>
     {%- if include.sessionCaption -%}
-      <p class="mono f6">{{include.sessionCaption}}</p>
+      <p class="mono normal f6">{{include.sessionCaption}}</p>
     {% endif %}
   </div>
   {%- endif -%}
