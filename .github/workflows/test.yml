@@ -27,4 +27,4 @@ jobs:
           bundle add html-proofer
       - name: Test site
         run: |
-          bundle exec htmlproofer ./_site --check-html
+          bundle exec htmlproofer ./_site --check-html --http-status-ignore "401"
