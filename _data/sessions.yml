@@ -1354,7 +1354,7 @@
     - backstage
   moderation:
     - Unmoderated
-  sessionLink: 
+  sessionLink: "http://manyland.com/wmanhub"
 
 - sessionID: 20029
   title: "Crafting Commons: A round table on cybercraft networks"
