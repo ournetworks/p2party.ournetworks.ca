@@ -1,7 +1,6 @@
 {%- for session in site.data.sessions[include.year] -%}
   {%- if include.session-id == session.sessionID -%}
   <div class="session">
-    <a class="schedule-block-anchor" {% unless session.skipProgramID %}id="{{ session.title | truncatewords: 6, '' | downcase | replace: ':', '' | replace: ' ', '-' }}-schedule"{% endunless %}></a>
     <header>
       <h5 class="mt0 mb2 f5 session-title">
         {% if session.sessionLink %}

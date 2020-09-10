@@ -65,6 +65,17 @@ document.querySelectorAll('.schedule-button').forEach((e) => {
   })
 })
 
+// Click change
+
+document.querySelectorAll('.session-block').forEach((e) => {
+  e.addEventListener('click', () => {
+    const locationHash = e.querySelector('.session-title-link')
+    if (locationHash) {
+      window.location.hash = locationHash.getAttribute('href')
+    }
+  })
+})
+
 // Schedule set
 
 const DateToFormattedString = (d) => {

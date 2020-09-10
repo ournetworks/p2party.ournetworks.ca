@@ -1354,7 +1354,7 @@
     - backstage
   moderation:
     - Unmoderated
-  sessionLink: 
+  sessionLink: "http://manyland.com/wmanhub"
 
 - sessionID: 20029
   title: "Crafting Commons: A round table on cybercraft networks"
@@ -1469,7 +1469,7 @@
     I plan to introduce Open Learning Commons: the idea, its history, and the current status of the project. I will then show a bunch of the open-source software that composes the learning commons infrastructure and describe some of the co-learning groups who are making use of that infrastructure (Things like their practices and topics of interest). I will then open the session up to questions and discussion about peer learning (peeragogy), open educational resources/EdTech, and community networks more generally.
   sessionType:
     - talk
-  sessionWorkshopLink: "https://ournetworks.meet.coop/hen-v82-sjm-sd0"
+  sessionWorkshopLink: "#"
   moderation:
     - Moderated
 
